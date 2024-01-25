@@ -30,12 +30,10 @@
   --transition: all 0.5s ease;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+/* ====== config general ====== */
+
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700 !important;
 }
 
@@ -55,6 +53,22 @@ a:hover {
   color: var(--color-blue-600)!important;
 }
 
+/* ====== btn boton ====== */
+
+.btn-principal{
+  font-weight: 500 !important;
+  color: #fff !important;
+  background: linear-gradient(45deg, var(--color-blue-600), var(--color-blue-800));
+  transition: all 0.5s ease !important;
+}
+
+.btn-principal:hover{
+  color: #fff!important;
+  background: linear-gradient(-45deg, var(--color-blue-500), var(--color-blue-700));
+}
+
+/* ====== navbar ====== */
+
 .navbar {
   position: absolute !important;
   width: 100%;
@@ -72,18 +86,26 @@ a:hover {
 }
 
 
+/* ====== header ====== */
+
 #inicio{
   background-color: var(--bg);
 }
 
-.btn-principal{
-  font-weight: 500 !important;
-  color: #fff !important;
-  background: linear-gradient(45deg, var(--color-blue-600), var(--color-blue-800));
-  transition: all 0.5s ease !important;
+
+/* ====== cards ====== */
+
+.card{
+  color: var(--color-blue-700) !important;
+  padding: 0px !important;
+  border: none !important;
 }
 
-.btn-principal:hover{
-  color: #fff!important;
-  background: linear-gradient(-45deg, var(--color-blue-500), var(--color-blue-700));
+.card-body{
+  background-color: var(--bg);
+  border-radius: 0px 0px 10px 10px !important;
+}
+
+.card-text{
+  font-size: 14px !important;
 }
