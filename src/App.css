@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
@@ -14,15 +14,19 @@
 }
 
 :root {
-  --color-primario: #00abe4;
-  --color-primario-light: #00bfff84;
-  --color-dark: #080808;
-  --color-dark-light: #394048;
-  --color-light-opacity: rgba(208, 208, 208, 0.464);
-  --color-light: #f1f1f1;
-  --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
-  --box-shadow-neon: 0px 5px 45px rgb(0, 171, 228);
-  --box-shadow-neon-progress: 0px 0px 25px rgba(0, 171, 228, 0.612);
+  --color-blue-50: #eff5ff;
+  --color-blue-100: #dae8ff;
+  --color-blue-200: #bed8ff;
+  --color-blue-300: #91c0ff;
+  --color-blue-400: #5d9efd;
+  --color-blue-500: #3778fa;
+  --color-blue-600: #2158ef;
+  --color-blue-700: #1943db;
+  --color-blue-800: #1b37b2;
+  --color-blue-900: #1c348c;
+  --color-blue-950: #162155;
+  --bg:#EDEDED;
+  --shadow:0px 4px 8px #1620551a;
   --transition: all 0.5s ease;
 }
 
@@ -38,20 +42,48 @@ h6 {
 body {
   font-family: "Poppins", sans-serif !important;
   line-height: 1.7;
+  color: var(--color-blue-700)!important;
 }
 
 a {
   text-decoration: none !important;
+  color: var(--color-blue-700)!important;
+  transition: var(--transition)!important;
+}
 
+a:hover {
+  color: var(--color-blue-600)!important;
 }
 
 .navbar {
   position: absolute !important;
   width: 100%;
   z-index: 1;
+  box-shadow: var(--shadow);
 }
 
 .nav-logo {
   width: 65px;
   transition: var(--transition);
+}
+
+.nav-item a{
+  font-weight: 600;
+}
+
+
+#inicio{
+  background-color: var(--bg);
+}
+
+.btn-principal{
+  font-weight: 500 !important;
+  color: #fff !important;
+  background: linear-gradient(45deg, var(--color-blue-600), var(--color-blue-800));
+  transition: all 0.5s ease !important;
+}
+
+.btn-principal:hover{
+  color: #fff!important;
+  background: linear-gradient(-45deg, var(--color-blue-500), var(--color-blue-700));
 }
