@@ -1,5 +1,5 @@
 import React from 'react'
-import Cards from '../cards.jsx';
+import Cards from '../../Components/Cards';
 
 const Autos = () => {
     const autos = [
@@ -30,6 +30,9 @@ const Autos = () => {
                                 km={auto.km}
                             />
                         ))}
+                    </div>
+                    <div className="col-10 d-flex justify-content-center" >
+                        <a href="#" className='btn btn-principal px-6 py-3'>Ver Más</a>
                     </div>
                 </div>
             </div>

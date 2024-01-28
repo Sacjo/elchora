@@ -27,7 +27,7 @@
   --color-blue-950: #162155;
   --bg:#EDEDED;
   --shadow:0px 4px 8px #1620551a;
-  --transition: all 0.5s ease;
+  --transition: all 0.5s ease !important;
 }
 
 
@@ -55,16 +55,30 @@ a:hover {
 
 /* ====== btn boton ====== */
 
-.btn-principal{
+.btn{
   font-weight: 500 !important;
+  transition: var(--transition);
+}
+
+.btn-principal{
   color: #fff !important;
   background: linear-gradient(45deg, var(--color-blue-600), var(--color-blue-800));
-  transition: all 0.5s ease !important;
 }
 
 .btn-principal:hover{
   color: #fff!important;
   background: linear-gradient(-45deg, var(--color-blue-500), var(--color-blue-700));
+}
+
+.btn-principal-blanco{
+  border: 2px solid #fff !important;
+  color: #fff !important;
+  background: none !important;
+}
+
+.btn-principal-blanco:hover{
+  background: var(--color-blue-50)!important;
+  color: linear-gradient(-45deg, var(--color-blue-500), var(--color-blue-700))!important;
 }
 
 /* ====== navbar ====== */
@@ -96,16 +110,42 @@ a:hover {
 /* ====== cards ====== */
 
 .card{
+  border: 2px solid var(--bg) !important;
+  border-radius: 10px !important;
   color: var(--color-blue-700) !important;
   padding: 0px !important;
-  border: none !important;
+}
+
+
+.card:hover .card-body{
+  background-color: var(--bg);
 }
 
 .card-body{
-  background-color: var(--bg);
-  border-radius: 0px 0px 10px 10px !important;
+  transition: var(--transition);
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
 }
 
 .card-text{
   font-size: 14px !important;
+}
+
+.card-img-top{
+  object-fit: cover !important;
+  height: 250px !important;
+  border-top-left-radius: 8px !important;
+  border-top-right-radius: 8px !important;
+}
+
+
+/* ====== pendrive ====== */
+
+#pendrive{
+  background-color: var(--color-blue-800);
+}
+
+.home-img-pendrive{
+  width: 250px;
+  border-radius: 10px;
 }
