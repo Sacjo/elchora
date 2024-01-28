@@ -53,8 +53,9 @@ a:hover {
   color: var(--color-blue-600)!important;
 }
 
-.nav-link{
-  color: var(--color-blue-700)!important;
+.linea{
+  border-top: 1px solid var(--color-blue-700);
+  opacity: 1;
 }
 
 /* ====== btn boton ====== */
@@ -103,6 +104,9 @@ a:hover {
   font-weight: 600;
 }
 
+.nav-link{
+  color: var(--color-blue-700)!important;
+}
 
 /* ====== header ====== */
 
@@ -162,7 +166,12 @@ a:hover {
 }
 
 .dropdown-item.active, .list-group-item.active{
+  color: #fff!important;
    background: linear-gradient(45deg, var(--color-blue-500), var(--color-blue-700))!important;
+}
+
+.dropdown-item{
+  color: var(--color-blue-700) !important;
 }
 
 
@@ -179,6 +188,26 @@ a:hover {
   width: 100%;
 }
 
+
+
+
+
+.detallesProducos{
+  border-radius: 10px;
+  background-color: var(--bg);
+}
+
+.img-detallesProducos{
+  border-radius: 10px;
+  height: 400px ;
+  width: 400px;
+  object-fit: cover;
+}
+
+.linea-derecha{
+  border-right: 1px solid var(--color-blue-700);
+}
+
 /* ====== medidas ====== */
 
 /* Para pantallas medianas y mayores (por ejemplo, tablets y desktops) */
@@ -192,5 +221,9 @@ a:hover {
 @media (max-width: 767px) {
   .productosLis {
       grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+  .img-detallesProducos {
+    width: 100%;
+    height: auto; 
   }
 }

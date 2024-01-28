@@ -7,10 +7,10 @@ const ProductsAll = () => {
     return (
         <>
             <Navbar />
-            <div className='mt-4'>
+            <section className='mt-4'>
                 <h2 className='text-center mb-4'>Productos</h2>
                 <Productos />
-            </div>
+            </section>
         </>
     )
 }
