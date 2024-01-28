@@ -2,20 +2,21 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.css'
 import Admin from './Pages/Admin';
 import Home from './Pages/Home';
+import ProductsAll from './Pages/ProductsAll';
 import Error404 from './Pages/Error404';
 
 function App() {
 
   return (
-    <div>
-    <Routes>
+    <main>
+      <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/productos' element={<ProductsAll />} />
         <Route path='/admin' element={<Admin />} />
         <Route path='*' element={<Error404 />} />
         {/* <Route path='*' element={<Navigate to="/" />} /> */}
-    </Routes>
-
-  </div>
+      </Routes>
+    </main>
   )
 
 }

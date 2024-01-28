@@ -7,11 +7,7 @@ const Autos = () => {
         { link:"https://www.google.com", img: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/KIA_Niro_01_0.jpg?tf=1080x", nombre: "Auto 2", precio: "30.000", km: "5.000" },
         { link:"https://www.google.com", img: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/KIA_Niro_01_0.jpg?tf=1080x", nombre: "Auto 2", precio: "30.000", km: "5.000" },
         { link:"https://www.google.com", img: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/KIA_Niro_01_0.jpg?tf=1080x", nombre: "Auto 2", precio: "30.000", km: "5.000" },
-        { link:"https://www.google.com", img: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/KIA_Niro_01_0.jpg?tf=1080x", nombre: "Auto 2", precio: "30.000", km: "5.000" },
-        { link:"https://www.google.com", img: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/KIA_Niro_01_0.jpg?tf=1080x", nombre: "Auto 2", precio: "30.000", km: "5.000" },
-        { link:"https://www.google.com", img: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/KIA_Niro_01_0.jpg?tf=1080x", nombre: "Auto 2", precio: "30.000", km: "5.000" },
-        { link:"https://www.google.com", img: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/bdc/dc/fotos/KIA_Niro_01_0.jpg?tf=1080x", nombre: "Auto 2", precio: "30.000", km: "5.000" },
-    ];
+        ];
     return (
         <section id='autos' className='mb-5'>
             <div className='container'>
@@ -19,7 +15,7 @@ const Autos = () => {
                     <div className='col-10 col-md-6 mb-3 mt-2'>
                         <h2 className='text-center'>Autos</h2>
                     </div>
-                    <div className='row justify-content-center justify-content-md-between'>
+                    <div className='productosLis'>
                         {autos.map((auto, index) => (
                             <Cards
                                 key={index}
@@ -32,7 +28,7 @@ const Autos = () => {
                         ))}
                     </div>
                     <div className="col-10 d-flex justify-content-center" >
-                        <a href="#" className='btn btn-principal px-6 py-3'>Ver Más</a>
+                        <a href="/productos" className='btn btn-principal px-6 py-3'>Ver Más</a>
                     </div>
                 </div>
             </div>
