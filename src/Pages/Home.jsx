@@ -7,13 +7,13 @@ import Celulares from './Home/Celulares'
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Navbar/>
             <Header/>
             <Autos/>
             <Pendrive/>
             <Celulares/>
-        </div>
+        </>
     )
 }
 

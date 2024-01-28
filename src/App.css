@@ -41,16 +41,20 @@ body {
   font-family: "Poppins", sans-serif !important;
   line-height: 1.7;
   color: var(--color-blue-700)!important;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none !important;
-  color: var(--color-blue-700)!important;
   transition: var(--transition)!important;
 }
 
 a:hover {
   color: var(--color-blue-600)!important;
+}
+
+.nav-link{
+  color: var(--color-blue-700)!important;
 }
 
 /* ====== btn boton ====== */
@@ -84,7 +88,7 @@ a:hover {
 /* ====== navbar ====== */
 
 .navbar {
-  position: absolute !important;
+  position: relative !important;
   width: 100%;
   z-index: 1;
   box-shadow: var(--shadow);
@@ -133,7 +137,7 @@ a:hover {
 
 .card-img-top{
   object-fit: cover !important;
-  height: 250px !important;
+  height: 300px !important;
   border-top-left-radius: 8px !important;
   border-top-right-radius: 8px !important;
 }
@@ -148,4 +152,45 @@ a:hover {
 .home-img-pendrive{
   width: 250px;
   border-radius: 10px;
+}
+
+
+/* ====== productos ====== */
+
+.list-group-item {
+  border-radius: 10px !important;
+}
+
+.dropdown-item.active, .list-group-item.active{
+   background: linear-gradient(45deg, var(--color-blue-500), var(--color-blue-700))!important;
+}
+
+
+.productosLis {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.menu-producto{
+  position: relative !important;
+  width: 100%;
+}
+.dropdown-toggle{
+  width: 100%;
+}
+
+/* ====== medidas ====== */
+
+/* Para pantallas medianas y mayores (por ejemplo, tablets y desktops) */
+@media (min-width: 768px) {
+  .productosLis {
+      grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  }
+}
+
+/* Para pantallas pequeñas (por ejemplo, celulares) */
+@media (max-width: 767px) {
+  .productosLis {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
 }
